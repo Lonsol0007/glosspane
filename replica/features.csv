@@ -1,0 +1,74 @@
+feature,area,priority,original,clone,notes
+Library grid of saved series with covers,library,must,yes,yes,
+Unread count badge on covers,library,must,yes,yes,
+Search the library by title,library,must,yes,yes,
+Category tabs in the library,library,must,yes,yes,
+Sort library (title / last read / date added / unread),library,must,yes,yes,
+Filter library (unread / started / completed / bookmarked),library,should,yes,yes,
+Display mode (compact grid / comfortable grid / list),library,should,yes,yes,
+Multi-select series (set categories / mark read / remove),library,should,yes,yes,
+Import a series from a local archive or images,browse,must,yes,yes,Mihon local source
+Import several archives as chapters of one series,browse,must,yes,yes,
+Series page with cover title author description genres,series,must,yes,yes,
+Chapter list with read state and progress,series,must,yes,yes,
+Start or resume reading button,series,must,yes,yes,
+Mark chapters read or unread,series,must,yes,yes,
+Bookmark chapters,series,should,yes,yes,
+Mark previous chapters as read,series,should,yes,yes,
+Sort and filter the chapter list,series,should,yes,partial,newest/oldest order and unread/bookmarked filters; no sort by upload date or chapter number
+Add or remove from library (favourite),series,must,yes,yes,
+Edit series info and cover,series,could,yes,partial,all text fields editable; cover cannot be replaced
+Notes on a series,series,could,yes,yes,
+Paged reader left-to-right,reader,must,yes,yes,
+Paged reader right-to-left,reader,must,yes,yes,
+Vertical paged reader,reader,should,yes,yes,paged with up/down keys and top/bottom tap zones; no slide animation
+Webtoon continuous scroll reader,reader,must,yes,yes,
+Remember last page read and resume,reader,must,yes,yes,
+Page slider and page number,reader,must,yes,yes,
+Previous and next chapter from the reader,reader,must,yes,yes,
+Tap zones and keyboard navigation,reader,must,yes,yes,
+Reader background colour and image scale type,reader,should,yes,yes,
+Per-series reading mode,reader,should,yes,yes,
+Fullscreen and keep menu hidden,reader,could,yes,partial,controls hide; browser fullscreen is left to the browser or the installed app
+Reading history with resume,history,must,yes,yes,
+Remove history entries and clear all,history,should,yes,yes,
+Updates feed of recently added chapters,updates,should,yes,yes,
+Create rename reorder delete categories,categories,must,yes,yes,
+Light dark and system theme,settings,must,yes,yes,
+Colour theme choices,settings,could,yes,no,
+Create and restore a backup file,data,must,yes,yes,
+Clear database and storage usage,data,should,yes,yes,
+Reading statistics,more,could,yes,yes,
+Incognito mode (no history),more,should,yes,yes,
+Onboarding on first run,onboarding,could,yes,no,empty library points to Add instead
+Global search across sources,browse,could,yes,partial,one source in the clone so it equals library search
+App lock and secure screen,security,could,yes,no,a web page cannot lock itself reliably
+Extensions and remote sources,browse,skip,yes,skip,third-party content the app does not own; unlicensed sources
+Extension stores,browse,skip,yes,skip,serves extensions only
+Download queue for remote chapters,downloads,skip,yes,skip,no remote sources
+Source migration,browse,skip,yes,skip,no remote sources
+Tracker sync (MAL AniList Kitsu ...),tracking,skip,yes,skip,needs each tracker's OAuth app registration
+WebView for sources,browse,skip,yes,skip,no remote sources
+Detect text regions on a page,translation,must,koharu,partial,"built; tested against a stubbed provider only, no live model call was possible here"
+OCR source text per region,translation,must,koharu,partial,built; tested against a stubbed provider only
+Translate regions to a target language with an LLM,translation,must,koharu,partial,built; tested against a stubbed provider only
+Clean source text from bubbles,translation,must,koharu,yes,background fill not generative inpainting
+Typeset translation with automatic fitting,translation,must,koharu,yes,
+Toggle original and translated page,translation,must,new,yes,
+Run on current page or whole chapter with progress and stop,translation,must,koharu,yes,
+Proofread: edit source and translation per block,translation,should,koharu,yes,
+Rerun keeps edited text,translation,should,koharu,yes,
+Retranslate or delete a single block,translation,should,koharu,yes,retranslate tested against a stubbed provider
+Choose stages to run,translation,could,koharu,no,"detect, read and translate are one call; cleanup is a setting"
+Translation cache per page and language,translation,must,new,yes,
+Auto-translate on page open,translation,could,new,partial,"built, not covered by a test"
+Export translated page as an image,translation,could,koharu,no,flattened PNG only
+Local GGUF and vision models,translation,skip,koharu,skip,cannot run in a browser at usable speed
+Generative inpainting,translation,skip,koharu,skip,needs local GPU models
+Layered PSD export and canvas editor,translation,skip,koharu,skip,editor product not a reader feature
+Runs on iPhone iPad and desktop browsers and installs to the home screen,platform,must,no,yes,fix 1; no service worker yet so a cold start needs the network
+No extensions: reads only the user's own files,platform,must,no,yes,fix 2
+Double-page spread mode,reader,should,no,no,fix 5
+Sync across devices,data,should,no,no,fix 6; schema.sql is ready for it
+Group chapters by volume,series,could,no,no,fix 7
+One font-size control and movable boxes for translated text,translation,could,no,no,fix 8

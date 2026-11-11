@@ -1,0 +1,21 @@
+{
+  "name": "Glosspane",
+  "avoid": [
+    "Mihon",
+    "Tachiyomi",
+    "Koharu",
+    "mihonapp",
+    "koharu-rs",
+    "kanade"
+  ],
+  "domains": [
+    "mihon.app",
+    "koharu.rs",
+    "tachiyomi.org"
+  ],
+  "colors": [
+    "#0058A0",
+    "#F2FAFF",
+    "#031019"
+  ]
+}

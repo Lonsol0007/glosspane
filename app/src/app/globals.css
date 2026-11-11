@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Tokens: generated from replica/design/tokens.json and tokens.dark.json. Names stay, values change. */
+:root {
+  --bg: #fffbf8;
+  --surface: #f6efe9;
+  --surface-2: #ebe2da;
+  --border: #dcd2c8;
+  --border-input: #7f756c;
+  --text: #1f1b17;
+  --text-muted: #52463c;
+  --accent: #8f4c00;
+  --on-accent: #ffffff;
+  --accent-soft: #ffdcc0;
+  --on-accent-soft: #2e1500;
+  --danger: #b3261e;
+  --success: #1b6e45;
+  --reader-bg: #000000;
+  --reader-text: #f2f2f2;
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.1);
+  --shadow-pop: 0 12px 32px rgba(16, 24, 40, 0.16);
+  --font-comic: "Comic Neue", "Comic Sans MS", system-ui, sans-serif;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #16130f;
+  --surface: #201c18;
+  --surface-2: #2c2722;
+  --border: #3d3731;
+  --border-input: #9c8f84;
+  --text: #ece1d8;
+  --text-muted: #b8aa9d;
+  --accent: #ffb77c;
+  --on-accent: #4a2800;
+  --accent-soft: #6c3a00;
+  --on-accent-soft: #ffdcc0;
+  --danger: #ffb4ab;
+  --success: #7fd8a6;
+  --reader-bg: #000000;
+  --reader-text: #f2f2f2;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-border-input: var(--border-input);
+  --color-text: var(--text);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent-soft: var(--on-accent-soft);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-reader-bg: var(--reader-bg);
+  --color-reader-text: var(--reader-text);
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-card: var(--shadow-card);
+  --shadow-pop: var(--shadow-pop);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

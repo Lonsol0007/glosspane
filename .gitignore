@@ -1,0 +1,6 @@
+# reference material from the original apps: never published
+/replica/screens/
+/replica/diffs/
+# test output
+test-results/
+playwright-report/

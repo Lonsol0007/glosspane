@@ -1,0 +1,173 @@
+{
+ "_about": "Themes for a manga reader and a manga translator.",
+ "request_patterns": [
+  "\\bi wish\\b",
+  "\\bplease add\\b",
+  "\\bwould be (nice|great|good|helpful)\\b",
+  "\\bwould love\\b",
+  "\\bneeds? (a|an|the|to|more)\\b",
+  "\\bno way to\\b",
+  "\\bthere'?s no (way|option)\\b",
+  "\\b(can'?t|cannot|unable to) (even )?(add|change|edit|set|choose|export|import|customi[sz]e|connect|undo|delete|turn off)\\b",
+  "\\b(missing|lacks|lacking)\\b",
+  "\\bdoesn'?t (have|support|let|allow)\\b",
+  "\\bif only\\b",
+  "\\bfeature request\\b",
+  "\\bwhy (can'?t|isn'?t|doesn'?t)\\b",
+  "\\bfeature request\\b",
+  "\\badd (a|an|the|support|option)\\b",
+  "\\bability to\\b",
+  "\\bsupport for\\b",
+  "\\boption to\\b"
+ ],
+ "themes": [
+  {
+   "id": "sync",
+   "label": "No sync across devices",
+   "kind": "request",
+   "patterns": [
+    "\\bsync",
+    "cross.?device",
+    "\\bbackup",
+    "multiple devices",
+    "\\bcloud\\b"
+   ]
+  },
+  {
+   "id": "trackers",
+   "label": "Tracker integrations break or fall short",
+   "kind": "complaint",
+   "patterns": [
+    "\\btrack(er|ers|ing)\\b",
+    "myanimelist",
+    "anilist",
+    "kitsu",
+    "\\bMAL\\b"
+   ]
+  },
+  {
+   "id": "sources",
+   "label": "Extensions and sources are fragile or a hassle",
+   "kind": "complaint",
+   "patterns": [
+    "\\bextension",
+    "\\brepo(s|sitor)",
+    "cloudflare",
+    "captcha",
+    "\\bsource(s)?\\b",
+    "takedown",
+    "DMCA",
+    "\\bmigrat"
+   ]
+  },
+  {
+   "id": "platform",
+   "label": "Android only: no iOS, desktop or web",
+   "kind": "request",
+   "patterns": [
+    "\\biOS\\b",
+    "iphone",
+    "ipad",
+    "\\bdesktop\\b",
+    "\\bweb (app|version|client)\\b",
+    "f-?droid",
+    "\\blinux\\b",
+    "\\bwindows\\b",
+    "\\bmac\\b",
+    "docker",
+    "headless"
+   ]
+  },
+  {
+   "id": "translate",
+   "label": "Translation: reading in your own language",
+   "kind": "request",
+   "patterns": [
+    "translat",
+    "\\bOCR\\b",
+    "scanlat",
+    "\\braw(s)?\\b",
+    "\\blanguage\\b",
+    "inpaint"
+   ]
+  },
+  {
+   "id": "reader",
+   "label": "Reader gaps: double page, scaling, scrolling",
+   "kind": "request",
+   "patterns": [
+    "double page",
+    "dual.?page",
+    "\\bspread",
+    "\\bscaling\\b",
+    "sharpen",
+    "auto.?scroll",
+    "reading mode",
+    "\\breader\\b",
+    "page preview",
+    "long strip"
+   ]
+  },
+  {
+   "id": "organise",
+   "label": "Library organisation: volumes, groups, sub-categories",
+   "kind": "request",
+   "patterns": [
+    "\\bvolume",
+    "sub-?categor",
+    "\\bgroup",
+    "\\bsort",
+    "read list",
+    "\\bnotes?\\b",
+    "custom (way|order)",
+    "edit manga"
+   ]
+  },
+  {
+   "id": "local",
+   "label": "Local files and storage management",
+   "kind": "request",
+   "patterns": [
+    "\\blocal\\b",
+    "download(ed|s)?\\b",
+    "\\bcbz\\b",
+    "\\bepub\\b",
+    "comicinfo",
+    "metadata",
+    "storage",
+    "webd(av|rive)"
+   ]
+  },
+  {
+   "id": "perf",
+   "label": "Slowness, crashes and regressions",
+   "kind": "complaint",
+   "patterns": [
+    "\\bslow",
+    "\\bcrash",
+    "\\blag",
+    "fluidity",
+    "stuck",
+    "glitch",
+    "not working",
+    "unusable",
+    "\\bfails?\\b",
+    "\\bbroken\\b"
+   ]
+  },
+  {
+   "id": "typeset",
+   "label": "Translated text layout: font size, boxes, overlaps",
+   "kind": "complaint",
+   "patterns": [
+    "font size",
+    "\\bfont\\b",
+    "text box",
+    "overlap",
+    "detection box",
+    "bubble",
+    "text border"
+   ]
+  }
+ ]
+}

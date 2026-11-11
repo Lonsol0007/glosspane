@@ -1,0 +1,23 @@
+{
+  "avoid": [
+    "Mihon",
+    "Tachiyomi",
+    "Koharu",
+    "mihonapp",
+    "koharu-rs",
+    "kanade"
+  ],
+  "app_store": {
+    "name": "Glosspane: Comic Translator",
+    "subtitle": "Read comics in your language",
+    "promotional_text": "Open a chapter, press Translate, and read it in your language. Works with the comic files you already have.",
+    "description": "Glosspane is a comic reader that translates the page you are on, in place.\n\nAdd comic files you already have. Open a chapter. Press Translate, and the speech bubbles are read, translated and set back over the page in your language. Tap once to see the original again.\n\nWhat you get:\n- Translation inside the reader: one page, or the rest of the chapter\n- Every translated line can be corrected, and your corrections are kept\n- Right to left, left to right, vertical and long strip reading\n- Your place remembered in every chapter, with history and bookmarks\n- Categories, notes and editable series details\n- A private mode that leaves no history\n- One backup file for your library, progress and translations\n\nGlosspane includes no comics and connects to no catalogue or download source. It reads .cbz and .zip files and page images that you add.\n\nYour library stays on your device. There is no account.\n\nTranslation uses your own Anthropic API key, and Anthropic bills you for what you use. A page you translate is sent to Anthropic for that purpose and is not stored by us.",
+    "keywords": "manga,manhwa,webtoon,cbz,translate,japanese,korean,chinese,bubble,offline,library,scan",
+    "whats_new": "First release."
+  },
+  "google_play": {
+    "title": "Glosspane: Comic Translator",
+    "short_description": "A comic reader that translates the page you are on, in place.",
+    "full_description": "Glosspane is a comic reader that translates the page you are on, in place.\n\nAdd comic files you already have. Open a chapter. Press Translate, and the speech bubbles are read, translated and set back over the page in your language. Tap once to see the original again.\n\nWhat you get:\n- Translation inside the reader: one page, or the rest of the chapter\n- Every translated line can be corrected, and your corrections are kept\n- Right to left, left to right, vertical and long strip reading\n- Your place remembered in every chapter, with history and bookmarks\n- Categories, notes and editable series details\n- A private mode that leaves no history\n- One backup file for your library, progress and translations\n\nGlosspane includes no comics and connects to no catalogue or download source. It reads .cbz and .zip files and page images that you add.\n\nYour library stays on your device. There is no account.\n\nTranslation uses your own Anthropic API key, and Anthropic bills you for what you use. A page you translate is sent to Anthropic for that purpose and is not stored by us."
+  }
+}

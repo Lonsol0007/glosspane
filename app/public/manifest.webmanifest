@@ -1,0 +1,17 @@
+{
+  "name": "Glosspane",
+  "short_name": "Glosspane",
+  "description": "Read any comic in your language.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#16130f",
+  "theme_color": "#16130f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
